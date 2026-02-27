@@ -1,0 +1,2 @@
+Static Application Security Testing (SAST):
+Developers often make simple mistakes (like hardcoded credentials) that are buried in thousands of lines of code.
