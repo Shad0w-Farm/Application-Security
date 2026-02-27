@@ -1,0 +1,13 @@
+1. OAuth 2.0 & OIDC
+​Sharing passwords with third-party apps is dangerous. We need a way to delegate access.
+​
+Give the app a "key" that only opens one specific door for a limited time.
+​
+The industry-standard protocols for delegated authorization and identity.
+​
+2. JWT (JSON Web Token) Security
+​If not secured, attackers can change the "alg" to "none" or steal tokens to impersonate users.
+​
+A token is only as good as its signature.
+​
+Using strong signing (RS256), short expirations, and secure storage (HttpOnly cookies).
