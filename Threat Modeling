@@ -1,0 +1,10 @@
+We will look into the most important topics to master in Application Security. Anyone can run scans, however, to understand Application Security we need to go above and beyond scanning, we need to understand Secure Design, build and defend the entire Software Development Lifecycle.
+i have consolidated 30 important topics:
+
+1. Threat Modeling (STRIDE Framework):
+Finding a basic design flaw (like missing encryption between services) after the code is written is 100x more expensive to fix.
+We need to "think like an attacker" before a single line of code is written.
+Using frameworks like STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) to identify risks during the design phase.
+
+2. Static Application Security Testing (SAST):
+Developers often make simple mistakes (like hardcoded credentials) that are buried in thousands of lines of code.
