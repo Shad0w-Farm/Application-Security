@@ -1,0 +1,6 @@
+WAF vs. RASP
+​A WAF (Firewall) can be bypassed by complex payloads. We need a defense that understands the app's internal logic.
+​
+Protecting the perimeter vs. protecting the heart.
+​
+WAF filters external traffic; RASP (Runtime Self-Protection) sits inside the app and blocks attacks by watching actual code execution.
