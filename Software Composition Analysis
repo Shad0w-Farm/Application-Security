@@ -1,0 +1,3 @@
+Modern apps are 80% open-source libraries. You might write perfect code but import a massive vulnerability via an outdated package (e.g., Log4j).
+We need to manage the "Software Bill of Materials" (SBOM).
+Tools that track every third-party dependency and alert you to known CVEs.
