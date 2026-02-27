@@ -1,6 +1,13 @@
-WAF vs. RASP
+1. WAF vs. RASP
 ​A WAF (Firewall) can be bypassed by complex payloads. We need a defense that understands the app's internal logic.
 ​
 Protecting the perimeter vs. protecting the heart.
 ​
 WAF filters external traffic; RASP (Runtime Self-Protection) sits inside the app and blocks attacks by watching actual code execution.
+
+2. Secrets Management
+​Hardcoding API keys or DB passwords in code leads to catastrophic leaks if the repo is compromised.
+​
+Centralized, encrypted "vaults" for sensitive credentials.
+​
+Using tools like HashiCorp Vault or AWS Secrets Manager to inject credentials at runtime.
