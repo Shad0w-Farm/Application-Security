@@ -1,0 +1,30 @@
+API Security:
+
+​1. BOLA (Broken Object Level Authorization)
+​
+A user changes account_id=101 to 102 in a URL and sees someone else’s bank balance.
+​
+Authentication proves who you are; Authorization proves what you can touch.
+​
+Implementing granular checks at the database level to ensure the requester owns the specific resource.
+​
+2. BFLA (Broken Function Level Authorization)
+​Administrative endpoints (like /api/admin/delete_user) are "hidden" but not actually protected by role-based checks.
+​
+Security through obscurity is not security.
+​
+Enforcing a "Deny by Default" policy for every sensitive function.
+​
+3. Mass Assignment
+​An attacker adds {"is_admin": true} to a profile update request, and the backend "blindly" saves it to the database.
+​
+Never trust that input fields match your internal data models.
+​
+Using Data Transfer Objects (DTOs) and allow-lists for all API inputs.
+​
+4. Financial-grade API (FAPI) & mTLS
+​In Open Banking, a bank must ensure a Fintech partner is legitimate and that the data hasn't been intercepted.
+​
+Trust must be bi-directional and cryptographically proven.
+​
+Implementing Mutual TLS (mTLS) and the FAPI profile of OAuth 2.0 for high-security environments.
