@@ -6,5 +6,4 @@ Finding a basic design flaw (like missing encryption between services) after the
 We need to "think like an attacker" before a single line of code is written.
 Using frameworks like STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) to identify risks during the design phase.
 
-2. Static Application Security Testing (SAST):
-Developers often make simple mistakes (like hardcoded credentials) that are buried in thousands of lines of code.
+
