@@ -1,0 +1,14 @@
+​1. Input Validation and Injection
+​This is the most "classic" area of AppSec, dealing with how an application handles data from the outside world.
+
+​The Problem: SQL Injection (SQLi). An attacker enters malicious SQL code into a form field (like a login box). Because the application trusts the input, it executes the code, allowing the attacker to bypass passwords or dump the entire database.
+​
+The Solution: Parameterized Queries (Prepared Statements). Instead of building a query string with user input, you use placeholders. The database treats the input strictly as data, never as executable code.
+
+​The New Problem: Stored Cross-Site Scripting (XSS). While you’ve protected your database, you might still be saving "dirty" data (like a <script> tag in a profile bio). When another user views that profile, the script executes in their browser, stealing their session cookies.
+
+​The Better Solution: Output Encoding. You must treat all data as untrusted not just when it enters the system, but when it leaves. By encoding characters (turning < into &lt;), the browser renders the script as plain text instead of executing it.
+
+​Key Questions:
+​How does a Web Application Firewall (WAF) differ from manual input validation?
+​Why is "blacklisting" dangerous keywords (like DROP TABLE) less effective than "whitelisting" allowed formats?
